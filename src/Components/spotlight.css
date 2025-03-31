@@ -1,0 +1,36 @@
+.spotlight-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200vw;
+  height: 200vh;
+  z-index: 0;
+  pointer-events: none;
+
+  background: radial-gradient(
+    circle at 20% 20%,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.05) 60%,
+    transparent 100%
+  );
+
+  animation: spotlightMove 15s ease-in-out infinite;
+  filter: blur(60px);
+  opacity: 1;
+  transform: translate(-25%, -25%);
+  transition: all 0.5s ease;
+}
+@keyframes spotlightMove {
+  0% {
+    background-position: 20% 20%;
+    transform: scale(1.2) translate(-25%, -25%);
+  }
+  50% {
+    background-position: 50% 50%;
+    transform: scale(2.2) translate(-50%, -50%);
+  }
+  100% {
+    background-position: 80% 80%;
+    transform: scale(3) translate(-50%, -50%);
+  }
+}
