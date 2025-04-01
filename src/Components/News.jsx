@@ -33,7 +33,7 @@ const News = () => {
 
   useEffect(() => {
     const fetchNews = async () => {
-      const url = `https://gnews.io/api/v4/top-headlines?category=${selectedCategory}&lang=en&apikey=${process.env.REACT_APP_GNEWS_API_KEY}`;
+      const url = `https://gnews.io/api/v4/top-headlines?category=${selectedCategory}&lang=en&apikey=${import.meta.env.VITE_GNEWS_API_KEY}`;
       const response = await axios.get(url);
 
       const fetchedNews = response.data.articles;
@@ -138,9 +138,9 @@ const News = () => {
       </div>
       <footer>
         <p className="copyright">
-          <span>News App</span>
+          <span>Happy News</span>
         </p>
-        <p>&copy; All Rights Reserved. By Code And Create</p>
+        <p>&copy; Changhee Lee</p>
       </footer>
     </div>
   );
