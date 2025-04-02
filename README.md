@@ -1,8 +1,38 @@
-# React + Vite
+# 🗞️ Happy News – Modern React News App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Happy News** is a modern, responsive news application built with **React** and styled using **Tailwind CSS**. It fetches real-time headlines from the [GNews API](https://gnews.io) and displays them beautifully with interactive UI, animated spotlight effects, and modal views.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+
+- 📰 **Live News API Integration**  
+  Real-time news fetched by category using GNews API and Axios.
+
+- 🌈 **Gradient Spotlight Background**  
+  Dynamic spotlight animation using SVG and CSS keyframes for immersive design.
+
+- 🧭 **Category-Based Filtering**  
+  Easily filter news by categories like World, Technology, Business, etc.
+
+- 💬 **News Detail Modal**  
+  Clickable news cards open a modal with detailed info, image, date, and source.
+
+- ✨ **Interactive Hover & Glow Effects**  
+  Smooth hover glow animations for better UX.
+
+- 📱 **Fully Responsive Layout**  
+  Mobile-friendly UI with adaptive navigation and layout.
+
+---
+
+## 🛠️ Built With
+
+- **React** – Frontend Framework  
+- **Tailwind CSS** – Utility-first styling  
+- **Axios** – HTTP client for API requests  
+- **GNews API** – Real-time news data  
+- **CSS Animations** – Custom spotlight & fade-in effects  
+- **Google Fonts** – Typography (Bebas Neue, Comfortaa, Kanit)
+
+
